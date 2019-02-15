@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juanconcha.encargo_uno.SecondActivity">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:layout_column="2"
+        android:layout_span="2"
+        android:id="@+id/radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"/>
+
+        <RadioButton
+            android:id="@+id/radioBye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bye"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Seleccione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:text="Seleccione : "
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Seleccione"
+        android:layout_alignStart="@+id/Seleccione"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="97dp"
+        android:text="Ingrese edad" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:max="80"
+        android:progress="18"/>
+
+    <TextView
+        android:id="@+id/textViewYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="45dp"
+        android:text="18"
+        android:textSize="32dp"/>
+
+    <Button
+        android:id="@+id/buttonThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Go third!"
+        android:background="#512DA8"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
